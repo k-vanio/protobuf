@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "hands.on/protogen/basic";
+option go_package = "github.com/k-vanio/protobuf/protogen/basic";
 
 message Basic {
     string name = 1;

@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"hands.on/basic"
+	"github.com/k-vanio/protobuf/basic"
 )
 
 type debug struct{}

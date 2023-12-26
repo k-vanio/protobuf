@@ -3,10 +3,10 @@ package basic
 import (
 	"log"
 
+	"github.com/k-vanio/protobuf/protogen/users"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
-	"hands.on/protogen/users"
 )
 
 func BasicUser() {

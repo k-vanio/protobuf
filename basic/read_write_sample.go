@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/k-vanio/protobuf/protogen/users"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"
-	"hands.on/protogen/users"
 )
 
 func WriteProtoToFile(message proto.Message, filename string, json bool) error {

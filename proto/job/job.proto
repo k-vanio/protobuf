@@ -3,7 +3,7 @@ syntax = "proto3";
 import "proto/basic/application.proto";
 import "proto/dummy/application.proto";
 
-option go_package = "hands.on/protogen/job";
+option go_package = "github.com/k-vanio/protobuf/protogen/job";
 
 message Job {
     string name = 1;

@@ -1,4 +1,4 @@
-GO_MODULE := hands.on
+GO_MODULE := github.com/k-vanio/protobuf
 
 .PHONY: tidy
 tidy:

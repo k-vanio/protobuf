@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package dummy.v1;
 
-option go_package = "hands.on/protogen/dummy";
+option go_package = "github.com/k-vanio/protobuf/protogen/dummy";
 
 message Application {
     string name = 1;

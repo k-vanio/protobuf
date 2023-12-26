@@ -3,7 +3,7 @@ syntax = "proto3";
 
 import "proto/users/user.proto";
 
-option go_package = "hands.on/protogen/users";
+option go_package = "github.com/k-vanio/protobuf/protogen/users";
 
 message Usergroup {
   string id = 1 [json_name = "group_id"];

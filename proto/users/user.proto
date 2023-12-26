@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/any.proto";
 
-option go_package = "hands.on/protogen/users";
+option go_package = "github.com/k-vanio/protobuf/protogen/users";
 
 message User {
     uint32 id = 1;

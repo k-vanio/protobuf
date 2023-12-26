@@ -1,4 +1,4 @@
-module hands.on
+module github.com/k-vanio/protobuf
 
 go 1.20
 
