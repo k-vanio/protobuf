@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package dummy.v1;
+
+option go_package = "hands.on/protogen/dummy";
+
+message Application {
+    string name = 1;
+    string description = 2;
+    repeated string tags = 3;
+}

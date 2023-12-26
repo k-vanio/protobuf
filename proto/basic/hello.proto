@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option go_package = "hands.on/protogen/basic";
+
+message Basic {
+    string name = 1;
+}

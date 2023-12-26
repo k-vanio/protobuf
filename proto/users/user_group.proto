@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+
+import "proto/users/user.proto";
+
+option go_package = "hands.on/protogen/users";
+
+message Usergroup {
+  string id = 1 [json_name = "group_id"];
+  string name = 2;
+  repeated User users = 3;
+}

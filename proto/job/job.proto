@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "proto/basic/application.proto";
+import "proto/dummy/application.proto";
+
+option go_package = "hands.on/protogen/job";
+
+message Job {
+    string name = 1;
+    basic.v1.Application basic = 2;
+    dummy.v1.Application dummy = 3;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package basic.v1;
+
+option go_package = "hands.on/protogen/basic";
+
+/*
+Software 
+*/
+
+message Application {
+    string name = 1;
+    repeated string platforms = 2;
+
+}

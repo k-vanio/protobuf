@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+import "google/protobuf/any.proto";
+
+option go_package = "hands.on/protogen/users";
+
+message User {
+    uint32 id = 1;
+    string name = 2;
+    bool is_active = 3 [json_name = "is_active"];
+    bytes password = 4;
+
+    repeated string roles = 5;
+
+    Address address = 6;
+
+    google.protobuf.Any communication_channel = 7 [json_name = "communication_channel"];
+
+    map<string, Address> metadata = 8;
+}
+
+message Address {
+    string street = 1;
+    string city = 2;
+    string country = 3;
+    Coordinate coordinate = 4;
+
+    message Coordinate {
+        double latitude = 1;
+        double longitude = 2;
+    }
+}
+
+message PaperMail {
+    string mail = 1 [json_name = "paper_mail"];
+}
+
+message SocialMedia {
+    string media = 1 [json_name = "social_media"];
+}
+
+message InstantMessage {
+    string message = 1 [json_name = "instant_message"];
+}
